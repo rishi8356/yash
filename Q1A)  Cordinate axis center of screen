@@ -1,0 +1,19 @@
+#include<graphics.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int gd = DETECT,gm;
+int xmax, ymax;
+initgraph(&gd,&gm,"C:\\TC\\BGI");
+xmax =getmaxx();
+ymax =getmaxy();
+line(xmax/2,0,xmax/2,ymax);
+line(0,ymax/2,xmax,ymax/2);
+outtextxy(10,20,"Name: Sumit "); 
+outtextxy(10,50,"Roll.No: 19 "); 
+getch();
+closegraph();
+return 0;
+}
